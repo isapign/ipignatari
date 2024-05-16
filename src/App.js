@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react'
+import './App.css'
+import AboutMe from './components/AboutMe'
+import Experience from './components/Experience'
+import Introduction from './components/Introduction'
+import PageToolbar from './components/PageToolbar'
+import Projects from './components/Projects'
+import "./styles/GlobalColors.css"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [lightMode, setLightMode] = useState(false)
+    return (
+      <div className="App">
+        <div id="content">
+            <PageToolbar lightMode={lightMode} setLightMode={setLightMode}/>
+            <Introduction />
+            <AboutMe />
+            <Experience />
+            <Projects />
+        </div>
+      </div>
+  )
 }
 
-export default App;
+export default App
