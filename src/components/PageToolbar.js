@@ -11,16 +11,17 @@ const PageToolbar = (props) => {
 
     return <AppBar className="toolbar">
         <Toolbar className="toolbar">
-            <Grid container justifyContent="center" alignItems="center">
+            <Grid container justifyContent="center" alignItems="center" spacing={1}>
                 <Grid item>
                     <div className="toolbar-logo">{'< ipignatari />' }</div>
                 </Grid>
-                {pages.map((page) => <Grid item>
+                {window.innerWidth >= 850 && pages.map((page) => <Grid item>
                     <MenuItem className="toolbar-menu-item" key={page}>
                         {page}
                     </MenuItem>
                 </Grid>)}
-                <Grid item>
+                {!props.isMobile && <>
+                    <Grid item>
                     <IconButton onClick={() => props.setLightMode(!props.lightMode)}>
                         {props.lightMode ? <Brightness5Icon/> : <NightlightIcon/>}
                     </IconButton>
@@ -36,6 +37,7 @@ const PageToolbar = (props) => {
                     </a>
                     </MenuItem>
                 </Grid>
+                </>}
             </Grid>
         </Toolbar>
     </AppBar>

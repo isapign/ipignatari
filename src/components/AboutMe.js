@@ -18,7 +18,7 @@ class AboutMe extends React.Component {
   }
   render() {
     const techStack = [
-      "Javascript ES6+",
+      "Javascript",
       "Python",
       "ReactJs",
       "HTML/CSS",
@@ -46,9 +46,9 @@ class AboutMe extends React.Component {
                 <a href="https://www.usjt.br/"> USJT</a>.
               </p>
               <p>
-                Curiosidades: amo jogos, fotografia analógica, livros, corrida, animais e culinária.
+                Curiosidades: amo jogos, fotografia analógica, livros, corrida de rua, animais e culinária.
               </p>
-              <p>Algumas das principais tecnologias que tenho trabalhado:</p>
+              <p>Recentemente tenho trabalhado com essas tecnologias:</p>
               <ul>
                 {techStack.map(function (t, i) {
                   return (

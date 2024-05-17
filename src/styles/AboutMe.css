@@ -1,6 +1,6 @@
 #about {
     min-height: 60vh;
-    margin: 8% 8% 0 12%;
+    margin: 8% 8% 0 20%;
     align-items: flex-start;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .about-description li::before {
-    content: "▹    ";
+    content: "☾    ";
     color: var(--primary);
     position: absolute;
     left: 0;

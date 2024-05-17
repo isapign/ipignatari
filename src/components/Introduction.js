@@ -38,7 +38,7 @@ class Introduction extends React.Component {
         <FadeSection>
           <div className="introduction-description">
             <p>{'Desenvolvedora de software apaixonada por programação.'}</p>  
-            <p>{'Amo saber mais sobre desenvolvimento de jogos, animação, robôs, segurança da informação e o uso da tecnologia para fins ecológicos.'}</p>
+            <p>{'Amo aprender sobre desenvolvimento de jogos, animação, segurança da informação e o uso da tecnologia para fins ecológicos.'}</p>
           </div>
         </FadeSection>
       </div>

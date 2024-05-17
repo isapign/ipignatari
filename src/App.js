@@ -1,24 +1,29 @@
 import { useState } from 'react'
-import './App.css'
+import { Grid } from '@mui/material'
+import PageToolbar from './components/PageToolbar'
+import ContactMe from './components/ContactMe'
 import AboutMe from './components/AboutMe'
 import Experience from './components/Experience'
 import Introduction from './components/Introduction'
-import PageToolbar from './components/PageToolbar'
 import Projects from './components/Projects'
 import "./styles/GlobalColors.css"
+import './App.css'
 
 function App() {
   const [lightMode, setLightMode] = useState(false)
+  const isMobile = window.innerWidth < 500
+
     return (
-      <div className="App">
-        <div id="content">
-            <PageToolbar lightMode={lightMode} setLightMode={setLightMode}/>
+      <Grid item xs={12} className="App">
+        <Grid container id="content">
+            <PageToolbar isMobile={isMobile} lightMode={lightMode} setLightMode={setLightMode}/>
+            <ContactMe />
             <Introduction />
             <AboutMe />
             <Experience />
             <Projects />
-        </div>
-      </div>
+        </Grid>
+      </Grid>
   )
 }
 

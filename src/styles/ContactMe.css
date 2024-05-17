@@ -1,0 +1,27 @@
+.contact-list {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.contact-list ul {
+    float: right;
+    text-align: left;
+    padding: 10px 2px;
+    margin: 10px 40px;
+}
+
+.contact-list ul li span{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.contact-list ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.contact-list ul li a:hover{
+    color: #7971fe;
+}
