@@ -11,7 +11,7 @@ const ContactMe = () => {
         <MenuList>
             <MenuItem>
                 <ListItemIcon>
-                  <GitHubIcon fontSize="small" htmlColor='#7971fe'/>
+                  <GitHubIcon fontSize="small" htmlColor='#ff6584'/>
                 </ListItemIcon>
                 <ListItemText>
                     <a target="_blank" rel="noopener noreferrer" href="https://github.com/isapign/">
@@ -21,7 +21,7 @@ const ContactMe = () => {
             </MenuItem>
             <MenuItem>
                 <ListItemIcon>
-                  <InstagramIcon fontSize="small" htmlColor='#7971fe'/>
+                  <InstagramIcon fontSize="small" htmlColor='#ff6584'/>
                 </ListItemIcon>
                 <ListItemText>
                     <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/isapign/">
@@ -31,7 +31,7 @@ const ContactMe = () => {
             </MenuItem>
             <MenuItem>
                 <ListItemIcon>
-                  <LinkedInIcon fontSize="small" htmlColor='#7971fe'/>
+                  <LinkedInIcon fontSize="small" htmlColor='#ff6584'/>
                 </ListItemIcon>
                 <ListItemText>
                     <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/isabelly-pignatari/">

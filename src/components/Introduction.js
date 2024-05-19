@@ -32,7 +32,7 @@ class Introduction extends React.Component {
         <img src={logo} style={logoSize} alt="moonLight" />
         <Typist avgTypingDelay={80}>
             <span className="introduction-title">
-              {'Oi, me chamo Isabelly :) '}
+              {'Oi, sou a Isa :) '}
             </span>
         </Typist>
         <FadeSection>
