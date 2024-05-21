@@ -1,10 +1,11 @@
 import React from "react"
 
-import "../styles/Introduction.css"
-import Typist from "react-typist"
-import "react-typist/dist/Typist.css"
-import FadeSection from "./FadeSection"
+import '../styles/Introduction.css'
+import Typist from 'react-typist'
+import 'react-typist/dist/Typist.css'
+import FadeSection from './FadeSection'
 import logo from '../logo.svg'
+import TranslateText from '../translations/TranslateText'
 
 class Introduction extends React.Component {
   constructor() {
@@ -37,8 +38,8 @@ class Introduction extends React.Component {
         </Typist>
         <FadeSection>
           <div className="introduction-description">
-            <p>{'Desenvolvedora de software apaixonada por programação.'}</p>  
-            <p>{'Amo aprender sobre desenvolvimento de jogos, animação, segurança da informação e o uso da tecnologia para fins ecológicos.'}</p>
+            <p><TranslateText id="introduction.softwareDeveloper.text" /></p>  
+            <p><TranslateText id="introduction.description.text" /></p>
           </div>
         </FadeSection>
       </div>

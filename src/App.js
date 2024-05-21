@@ -6,20 +6,20 @@ import AboutMe from './components/AboutMe'
 import Experience from './components/Experience'
 import Introduction from './components/Introduction'
 import Projects from './components/Projects'
-import "./styles/GlobalColors.css"
+import './styles/GlobalColors.css'
 import './App.css'
 
-function App() {
-  const [lightMode, setLightMode] = useState(false)
-  const isMobile = window.innerWidth < 500
 
-    return (
+function App() {
+  const isMobile = window.innerWidth < 800
+
+  return (
       <Grid item xs={12} className="App">
         <Grid container id="content">
-            <PageToolbar isMobile={isMobile} lightMode={lightMode} setLightMode={setLightMode}/>
+            <PageToolbar isMobile={isMobile} />
             <ContactMe />
             <Introduction />
-            <AboutMe />
+            <AboutMe isMobile={isMobile} />
             <Experience />
             <Projects />
         </Grid>

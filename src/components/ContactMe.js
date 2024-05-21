@@ -1,43 +1,43 @@
-import { ListItemIcon, ListItemText, MenuItem, MenuList } from '@mui/material'
 import React from 'react'
-import "../styles/ContactMe.css"
+import { ListItemIcon, MenuItem, MenuList } from '@mui/material'
 import GitHubIcon from '@mui/icons-material/GitHub'
+import EmailRoundedIcon from '@mui/icons-material/EmailRounded'
 import InstagramIcon from '@mui/icons-material/Instagram'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
-
+import '../styles/ContactMe.css'
 
 const ContactMe = () => {
-    return <div className='contact-list'>
+    const iconColor = "#CACAFF"
+
+    return <div className="contact-list">
         <MenuList>
             <MenuItem>
-                <ListItemIcon>
-                  <GitHubIcon fontSize="small" htmlColor='#ff6584'/>
-                </ListItemIcon>
-                <ListItemText>
-                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/isapign/">
-                        Github
-                    </a>
-                </ListItemText>
+                <a href="mailto:isabellypignatari7@gmail.com">
+                    <ListItemIcon>
+                        <EmailRoundedIcon htmlColor={iconColor} />
+                    </ListItemIcon>
+                </a>
             </MenuItem>
             <MenuItem>
-                <ListItemIcon>
-                  <InstagramIcon fontSize="small" htmlColor='#ff6584'/>
-                </ListItemIcon>
-                <ListItemText>
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/isapign/">
-                        Instagram
-                    </a>
-                </ListItemText>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/isapign/">
+                    <ListItemIcon>
+                        <GitHubIcon htmlColor={iconColor} />
+                    </ListItemIcon>
+                </a>
             </MenuItem>
             <MenuItem>
-                <ListItemIcon>
-                  <LinkedInIcon fontSize="small" htmlColor='#ff6584'/>
-                </ListItemIcon>
-                <ListItemText>
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/isabelly-pignatari/">
-                        LinkedIn
-                    </a>
-                </ListItemText>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/isapign/">
+                    <ListItemIcon>
+                        <InstagramIcon htmlColor={iconColor} />
+                    </ListItemIcon>
+                </a>
+            </MenuItem>
+            <MenuItem>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/isabelly-pignatari/">
+                    <ListItemIcon>
+                        <LinkedInIcon htmlColor={iconColor} />
+                    </ListItemIcon>
+                </a>
             </MenuItem>
         </MenuList>
     </div>

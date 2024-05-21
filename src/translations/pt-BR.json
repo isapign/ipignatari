@@ -1,0 +1,12 @@
+{
+    "introduction.title": "Início",
+    "aboutMe.title": "Sobre mim",
+    "experience.title": "Experiência",
+    "projects.title": "Projetos",
+    "introduction.itsIsa.subtitle": "Oi, sou a Isa :)",
+    "introduction.softwareDeveloper.text": "Desenvolvedora de software apaixonada por programação.",
+    "introduction.description.text": "Amo aprender sobre desenvolvimento de jogos, animação, segurança da informação e o uso da tecnologia para fins ecológicos.",
+    "aboutMe.description.text": "Tenho 21 anos e atuo há 4 anos como Desenvolvedora Full Stack no projeto Backoffice da 3SCheckout. É um sistema que faz gerenciamento de franquias e lojas com integração para PDV, Totem e Delivery. Sou um dos 5 membros desse projeto da E-Deploy. Além disso, estou cursando Ciência da Computação na USJT. No momento estou me dedicando na área de desenvolvimento de jogos.",
+    "aboutMe.curiosities.text": "Curiosidades: Amo animais, fotografia analógica, pixel art, jogos, corrida de rua e confeitaria.",
+    "aboutMe.recentTechnologies.text": "Recentemente tenho trabalhado com essas tecnologias:"
+}

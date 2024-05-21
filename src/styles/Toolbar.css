@@ -1,8 +1,13 @@
 .toolbar {
     background: var(--background);
-    font-size: 21px;
-    color: var(--primary);
     box-shadow: none;
+    font-family: "Kanit", sans-serif;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 5px 0
 }
 
 .toolbar-contact {
@@ -23,11 +28,31 @@
   background-color: var(--lightest-background);
 }
 
-.toolbar-menu-item {
-    font-family: "font-roboto", monospace;
+.toolbar-menu-item,
+.toolbar-menu-item a {
+    font-size: 15px;
+    list-style-type: none;
+    padding: 0 8px;
+    font-weight: 200;
+    text-decoration: none;
+    color: var(--lightest-secondary);
+}
+
+.toolbar-menu-item a:hover {
+  color: var(--primary);
 }
 
 .toolbar-logo {
-    font-family: "Kanit", sans-serif;
     padding-right: 8px;
+    color: var(--primary);
+    font-size: 20px;
+}
+
+.toolbar-language {
+  padding: 6px;
+  position: absolute;
+  right: 0;
+  margin: 0 50px;
+  font-weight: 300;
+  font-size: 12px;
 }
