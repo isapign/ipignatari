@@ -34,7 +34,7 @@ class AboutMe extends React.Component {
           <Grid container justifyContent="center" display="block">
             <div className="section-header">
               <span className="section-title">
-                {'< sobre mim />'}
+                {'< '} <TranslateText id="aboutMe.title" /> {' />'} 
               </span>
             </div>
             <Grid item xs={12}>

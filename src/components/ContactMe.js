@@ -7,7 +7,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import '../styles/ContactMe.css'
 
 const ContactMe = () => {
-    const iconColor = "#CACAFF"
+    const iconColor = "#ccd6f6"
 
     return <div className="contact-list">
         <MenuList>

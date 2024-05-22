@@ -1,6 +1,7 @@
 import React from "react"
 import "../styles/Experience.css"
 import FadeSection from "./FadeSection"
+import TranslateText from "../translations/TranslateText"
 
 class Projects extends React.Component {
   constructor() {
@@ -22,7 +23,9 @@ class Projects extends React.Component {
       <div id="projects">
         <FadeSection>
           <div className="section-header">
-            <span className="section-title">{'< projetos pessoais />'}</span>
+            <span className="section-title">
+              {'< '} <TranslateText id="projects.title" /> {' />'} 
+            </span>
           </div>
           <div className="projects-content">
             <div className="projects-description">

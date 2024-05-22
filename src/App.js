@@ -20,7 +20,7 @@ function App() {
             <ContactMe />
             <Introduction />
             <AboutMe isMobile={isMobile} />
-            <Experience />
+            <Experience isMobile={isMobile} />
             <Projects />
         </Grid>
       </Grid>

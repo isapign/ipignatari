@@ -67,6 +67,7 @@ html {
   color: var(--lightest-secondary);
   font-size: 46px;
   font-weight: bold;
+  text-transform: lowercase;
 }
 
 @media only screen and (min-device-width: 800px) {

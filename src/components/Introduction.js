@@ -1,11 +1,12 @@
 import React from "react"
-
-import '../styles/Introduction.css'
 import Typist from 'react-typist'
 import 'react-typist/dist/Typist.css'
+import { Grid } from "@mui/material"
+
 import FadeSection from './FadeSection'
 import logo from '../logo.svg'
 import TranslateText from '../translations/TranslateText'
+import '../styles/Introduction.css'
 
 class Introduction extends React.Component {
   constructor() {
@@ -30,17 +31,23 @@ class Introduction extends React.Component {
 
     return (
       <div id="introduction">
-        <img src={logo} style={logoSize} alt="moonLight" />
-        <Typist avgTypingDelay={80}>
-            <span className="introduction-title">
-              {'Oi, sou a Isa :) '}
-            </span>
-        </Typist>
         <FadeSection>
-          <div className="introduction-description">
-            <p><TranslateText id="introduction.softwareDeveloper.text" /></p>  
-            <p><TranslateText id="introduction.description.text" /></p>
-          </div>
+          <Grid container justifyContent="center" display="block"> 
+            <img src={logo} style={logoSize} alt="moonLight" />
+            <Typist avgTypingDelay={80}>
+                <span className="introduction-title">
+                  {navigator.language === "pt-BR" ? "Oi, sou a Isa :)" : "Hi, I'm Isa"}
+                </span>
+            </Typist>
+            <Grid item xs={12}>
+              <div className="introduction-content">
+                <div className="introduction-description">
+                  <p><TranslateText id="introduction.softwareDeveloper.text" /></p>  
+                  <p><TranslateText id="introduction.description.text" /></p>
+                </div>
+              </div>
+            </Grid>
+          </Grid>
         </FadeSection>
       </div>
     )

@@ -19,9 +19,8 @@
 
 .contact-list ul li a{
     text-decoration: none;
-    color: white;
 }
 
 .contact-list ul li a:hover{
-    color: #7971fe;
+    filter: invert(56%) sepia(38%) saturate(7336%) hue-rotate(222deg) brightness(100%) contrast(104%);
 }
