@@ -25,7 +25,7 @@ const PageToolbar = (props) => {
                     </li>
                 </Grid>) : <>
                     <Grid item className="toolbar-contact">
-                        <a href="mailto:isabellypignatari7@gmail.com">
+                        <a href="mailto:ipignatari.contato@gmail.com">
                             <EmailRoundedIcon htmlColor={iconColor} />
                         </a>
                     </Grid>

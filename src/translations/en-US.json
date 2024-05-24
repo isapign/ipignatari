@@ -8,5 +8,6 @@
     "introduction.description.text": "I love learning about game development, animation, tech security and using technology for ecological purposes.",
     "aboutMe.description.text": "I am 21 years old and I have been working for 4 years as a <b>Full Stack Developer</b> on the 3SCheckout Backoffice project. It is a system that manages franchises and stores with integration for POS, Totem and Delivery. I am one of the 5 members of this E-Deploy project. Besides, I am studying Computer Science at USJT. I'm currently focusing on game development.",
     "aboutMe.curiosities.text": "Curiosities: I love animals, analog photography, pixel art, games, street racing and confectionery.",
-    "aboutMe.recentTechnologies.text": "Recently I have been working with these technologies:"
+    "aboutMe.recentTechnologies.text": "Recently I have been working with these technologies:",
+    "footer.developedBy.text": "Developed by Isabelly Pignatari."
 }

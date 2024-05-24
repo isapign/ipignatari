@@ -6,9 +6,9 @@ import AboutMe from './components/AboutMe'
 import Experience from './components/Experience'
 import Introduction from './components/Introduction'
 import Projects from './components/Projects'
+import Footer from './components/Footer'
 import './styles/GlobalColors.css'
-import './App.css'
-
+import './styles/App.css'
 
 function App() {
   const isMobile = window.innerWidth < 800
@@ -21,7 +21,7 @@ function App() {
             <Introduction isMobile={isMobile} />
             <AboutMe isMobile={isMobile} />
             <Experience isMobile={isMobile} />
-            <Projects />
+            <Footer />
         </Grid>
       </Grid>
   )

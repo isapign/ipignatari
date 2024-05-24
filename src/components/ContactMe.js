@@ -12,7 +12,7 @@ const ContactMe = () => {
     return <div className="contact-list">
         <MenuList>
             <MenuItem>
-                <a href="mailto:isabellypignatari7@gmail.com">
+                <a href="mailto:ipignatari.contato@gmail.com">
                     <ListItemIcon>
                         <EmailRoundedIcon htmlColor={iconColor} />
                     </ListItemIcon>

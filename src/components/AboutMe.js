@@ -5,12 +5,12 @@ import TranslateText from '../translations/TranslateText'
 import '../styles/AboutMe.css'
 
 const AboutMe = (props) => {
-  const techStack = [
+  const tech = [
     "Javascript",
     "Python",
-    "ReactJs",
-    "HTML/CSS",
     "C#",
+    "ReactJs",
+    "Java",
     "Unity"
   ]
 
@@ -36,7 +36,7 @@ const AboutMe = (props) => {
                 <TranslateText id="aboutMe.recentTechnologies.text" />
               </p>
               <ul>
-                {techStack.map(function (t, i) {
+                {tech.map(function (t, i) {
                   return (
                     <FadeSection key={i} delay={`${i + 1}00ms`}>
                       <li>{t}</li>

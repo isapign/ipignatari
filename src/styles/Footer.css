@@ -1,0 +1,28 @@
+#footer {
+    width: 100%;
+    justify-content: center;
+    padding: 50px 0;
+    display: flex
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-description {
+    color: var(--secondary);
+    font-family: "Inconsolata", monospace;
+    line-height: 15px;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 799px) {
+    .footer-description {
+        font-weight: 500;
+        font-size: 14px !important;
+    }
+}
+  

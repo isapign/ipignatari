@@ -14,9 +14,9 @@ import { Grid } from "@mui/material";
 
 const Experience = (props) => {
   return (
-    <div id="experience" style={{display: props.isMobile ? 'inline-block' : 'flex'}}>
+    <div id="experience">
       <FadeSection>
-        <Grid container justifyContent="center" display="block">
+        <Grid container justifyContent="center" display={props.isMobile ? 'flex' : 'block'}> 
           <div className="section-header">
             <span className="section-title">
               {'< '} <TranslateText id="experience.title" /> {' />'} 
@@ -25,7 +25,8 @@ const Experience = (props) => {
           <Grid item xs={12}>
             <div className="experience-content">
               <div className="experience-description">
-
+                <p><TranslateText id="introduction.softwareDeveloper.text" /></p>  
+                <p><TranslateText id="introduction.description.text" /></p>
               </div>
             </div>
           </Grid>

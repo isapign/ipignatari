@@ -4,131 +4,35 @@
   justify-content: center;
   padding: 5% 0;
 }
-  
-.joblist-job-title {
-  font-family: "Inconsolata", monospace;
-  font-size: 28px;
-  font-weight: bold;
-  color: var(--lightest-secondary);
-}
-  
-.joblist-job-company {
-  font-family: "Inconsolata", monospace;
-  font-size: 28px;
-  color: var(--green-bright);
-  font-weight: bold;
-}
-  
-.joblist-duration {
-  font-family: "Inconsolata", monospace;
-  font-size: 18px;
-  color: var(--secondary);
-}
-  
-#vertical-tabpanel {
-  margin-top: -28px;
-  padding-left: 25px;
-}
-  
-.MuiTab-wrapper {
-  font-size: 16px;
-  text-align: left;
-  align-items: flex-start !important;
-  font-family: "Inconsolata", monospace;
-}
-  
-.MuiButtonBase-root {
-  outline: none !important;
-  color: var(--lightest-secondary) !important;
-}
-
-.PrivateTabIndicator-colorSecondary-5 {
-  background-color: var(--green-bright) !important;
-}
-.jss5 {
-  background-color: var(--green-bright) !important;
-}
-.makeStyles-tabs-2 {
-  border-right: 1px solid var(--lightest-background) !important;
-}
-
-#experience .MuiTab-root {
-  padding: 6px 20px;
-}
-
-.MuiButtonBase-root:focus {
-  color: var(--green-bright) !important;
-}
-  
-  ul {
-    list-style: none;
-    margin-left: -40px;
-  }
-  
-  .job-description li::before {
-    content: "▹    ";
-    color: var(--green-bright);
-    position: absolute;
-    left: 0;
-  }
-  
-  .job-description li {
-    position: relative;
-    padding-left: 30px;
-    padding-bottom: 16px;
-    font-size: 18px;
-    color: var(--secondary);
-  }
-  
-  .job-description {
-    padding-top: 24px;
-    max-width: 650px;
-    font-family: "Inconsolata", monospace;
-    font-size: 20px;
-  }
-
-  .experience-description {
-    font-family: "Kanit", sans-serif;
-    font-weight: 900;
-    color: var(--secondary);
-    max-width: 600px;
-    font-size: 20px;
-    margin: 0;
-}
-  
-  .job-description a,
-  .job-description b {
-    font-size: 19px;
-    font-weight: bold;
-  }
 
 .experience-content {
   display: flex;
   flex-direction: row;
 }
-  
-  @media only screen and (max-width: 799px) {
-    #experience {
-      padding-left: unset;
-      padding-right: unset;
-    }
-  
-    .jss1 {
-      height: unset !important;
-      flex-direction: column !important;
-    }
-  
-    .makeStyles-root-1 {
-      height: unset !important;
-      width: unset;
-      flex-direction: column;
-    }
-  
-    .joblist-job-title {
-      font-size: 22px;
-    }
-  
-    .joblist-job-company {
-      font-size: 22px;
-    }
+
+.experience-description {
+  color: var(--secondary);
+  font-family: "Inconsolata", monospace;
+  line-height: 30px;
+  font-weight: 500;
+  font-size: 20px;
+  max-width: 1090px;
+}
+
+@media only screen and (max-width: 799px) {
+  #experience {
+    padding-left: unset;
+    padding-right: unset;
   }
+
+  .jss1 {
+    height: unset !important;
+    flex-direction: column !important;
+  }
+
+  .makeStyles-root-1 {
+    height: unset !important;
+    width: unset;
+    flex-direction: column;
+  }
+}
