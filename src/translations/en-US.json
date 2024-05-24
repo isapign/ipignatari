@@ -3,10 +3,10 @@
     "aboutMe.title": "About me",
     "experience.title": "Experience",
     "projects.title": "Projects",
-    "introduction.itsIsa.subtitle": "Hi, I'm Isa :)",
+    "introduction.itsIsa.subtitle": "hi, I'm Isa :)",
     "introduction.softwareDeveloper.text": "Software developer passionate about programming.",
     "introduction.description.text": "I love learning about game development, animation, tech security and using technology for ecological purposes.",
-    "aboutMe.description.text": "I am 21 years old and I have been working for 4 years as a Full Stack Developer on the 3SCheckout Backoffice project. It is a system that manages franchises and stores with integration for POS, Totem and Delivery. I am one of the 5 members of this E-Deploy project. Besides, I am studying Computer Science at USJT. I'm currently focusing on game development.",
+    "aboutMe.description.text": "I am 21 years old and I have been working for 4 years as a <b>Full Stack Developer</b> on the 3SCheckout Backoffice project. It is a system that manages franchises and stores with integration for POS, Totem and Delivery. I am one of the 5 members of this E-Deploy project. Besides, I am studying Computer Science at USJT. I'm currently focusing on game development.",
     "aboutMe.curiosities.text": "Curiosities: I love animals, analog photography, pixel art, games, street racing and confectionery.",
     "aboutMe.recentTechnologies.text": "Recently I have been working with these technologies:"
 }

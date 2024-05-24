@@ -17,8 +17,8 @@ function App() {
       <Grid item xs={12} className="App">
         <Grid container id="content">
             <PageToolbar isMobile={isMobile} />
-            <ContactMe />
-            <Introduction />
+            {!isMobile && <ContactMe />}
+            <Introduction isMobile={isMobile} />
             <AboutMe isMobile={isMobile} />
             <Experience isMobile={isMobile} />
             <Projects />

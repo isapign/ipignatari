@@ -1,30 +1,56 @@
 import React from 'react'
-import { AppBar, Grid } from '@mui/material'
+import { Grid } from '@mui/material'
+import GitHubIcon from '@mui/icons-material/GitHub'
+import EmailRoundedIcon from '@mui/icons-material/EmailRounded'
+import InstagramIcon from '@mui/icons-material/Instagram'
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import TranslateText from '../translations/TranslateText'
 import "../styles/Toolbar.css"
 
 const PageToolbar = (props) => {
-    const pages = [ 'introduction', 'aboutMe', 'experience', 'projects']
+    const pages = ['introduction', 'aboutMe', 'experience', 'projects']
+    const iconColor = "#ccd6f6"
 
     return <nav className="toolbar">
-            <Grid item xs={12}>
-                <Grid container justifyContent="center" alignItems="center" spacing={1}>
-                    <Grid item>
-                        <div className="toolbar-logo">{'< ipignatari />' }</div>
-                    </Grid>
-                    {window.innerWidth >= 850 && pages.map((page) => <Grid item key={page}>
-                        <li className="toolbar-menu-item" key={page}>
-                            <a href={`#${page}`}>
-                                <TranslateText id={`${page}.title`} />
-                            </a>
-                        </li>
-                    </Grid>)}
-                    <div className="toolbar-language">
-                        {props.defaultLanguage}
-                    </div>
+        <Grid item xs={12}>
+            <Grid container justifyContent="center" alignItems="center" spacing={props.isMobile ? 0 : 1}>
+                <Grid item>
+                    <div className="toolbar-logo">{'< ipignatari />' }</div>
                 </Grid>
+                {!props.isMobile ? pages.map((page) => <Grid item key={page}>
+                    <li className="toolbar-menu-item" key={page}>
+                        <a href={`#${page}`}>
+                            <TranslateText id={`${page}.title`} />
+                        </a>
+                    </li>
+                </Grid>) : <>
+                    <Grid item className="toolbar-contact">
+                        <a href="mailto:isabellypignatari7@gmail.com">
+                            <EmailRoundedIcon htmlColor={iconColor} />
+                        </a>
+                    </Grid>
+                    <Grid item className="toolbar-contact">
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/isapign/">
+                            <GitHubIcon htmlColor={iconColor} fontSize="small"/>
+                        </a>
+                    </Grid>
+                    <Grid item className="toolbar-contact">
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/isapign/">
+                            <InstagramIcon htmlColor={iconColor} />
+                        </a>
+                    </Grid>
+                    <Grid item className="toolbar-contact">
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/isabelly-pignatari/">
+                            <LinkedInIcon htmlColor={iconColor} />
+                        </a>
+                    </Grid>
+                </>}
+                <div className="toolbar-language">
+                    {props.defaultLanguage}
+                </div>
             </Grid>
-        </nav>
+        </Grid>
+    </nav>
 }
 
 export default PageToolbar

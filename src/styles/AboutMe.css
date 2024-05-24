@@ -11,14 +11,14 @@
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(2, minmax(200px, 10px));
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
+    font-family: "Inconsolata", monospace;
+    font-weight: 600;
 }
 
 .about-description li {
     position: relative;
     padding-left: 20px;
-    font-size: 18px;
+    font-size: 20px;
     color: var(--secondary);
     white-space: nowrap;
 }
@@ -36,8 +36,9 @@
 }
 
 .about-description {
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
+    font-family: "Inconsolata", monospace;
+    line-height: 30px;
+    font-weight: 500;
     color: var(--secondary);
     max-width: 600px;
     font-size: 20px;

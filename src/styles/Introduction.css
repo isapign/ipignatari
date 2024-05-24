@@ -15,7 +15,6 @@
 .Typist .Cursor--blinking {
   color: var(--primary);
   font-weight: 900;
-  padding-left: 4px;
 }
 
 .introduction-title {
@@ -32,8 +31,31 @@
 
 .introduction-description {
   color: var(--secondary);
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
+  font-family: "Inconsolata", monospace;
+  line-height: 30px;
+  font-weight: 500;
   font-size: 20px;
-  max-width: 60%;
+  max-width: 1090px;
+}
+
+@media only screen and (max-width: 799px) {
+  .introduction-title {
+    flex-direction: column;
+    padding: 40px 24px;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  #introduction {
+    padding: 25% 0 0 0;
+  }
+
+  .Typist {
+    font-size: 40px;
+  }
+
+  
+  .introduction-description {
+    text-align: center;
+  }
 }

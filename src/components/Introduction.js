@@ -1,14 +1,15 @@
 import React from "react"
 import Typist from 'react-typist'
 import 'react-typist/dist/Typist.css'
-import { Grid } from "@mui/material"
+import { Grid, makeStyles } from "@mui/material"
 
 import FadeSection from './FadeSection'
 import logo from '../logo.svg'
 import TranslateText from '../translations/TranslateText'
 import '../styles/Introduction.css'
 
-const Introduction = () => {
+const Introduction = (props) => {
+
   const logoSize = {
     width: window.innerWidth > 500 ? '50rem' : '20rem'
   }
@@ -16,7 +17,7 @@ const Introduction = () => {
   return (
     <div id="introduction">
       <FadeSection>
-        <Grid container justifyContent="center" display="block"> 
+        <Grid container justifyContent="center" display={props.isMobile ? 'flex' : 'block'}> 
           <img src={logo} style={logoSize} alt="moonLight" />
           <Typist avgTypingDelay={80}>
               <span className="introduction-title">
