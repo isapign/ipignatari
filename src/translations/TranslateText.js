@@ -6,7 +6,15 @@ const TranslateText = (props) => {
     const defaultLanguage = languages.includes(navigator.language) ? navigator.language : 'en-US'
     const translationsJsonFile = defaultLanguage === 'pt-BR' ? ptBR : enUS
 
-    return `${translationsJsonFile[props.id]}`
+    let translation = translationsJsonFile[props.id]
+    if (translation.includes('<b>')) {
+      let start = translation.indexOf("<b>")
+      let end = translation.indexOf("</b>")
+
+      translation = <>{`${translation.slice(0, start)}`} <b>{`${translation.slice(start + 3, end)}`}</b> {`${translation.slice(end + 4, translation.length)}`}</>
+    }
+
+    return translation
   }
 
 export default TranslateText
