@@ -11,16 +11,6 @@
     margin: 10px 40px;
 }
 
-.contact-list ul li span{
-    font-family: "Inconsolata", monospace;
-    font-weight: 600;
-    font-size: 16px;
-}
-
-.contact-list ul li a{
-    text-decoration: none;
-}
-
 .contact-list ul li a:hover{
     filter: invert(56%) sepia(38%) saturate(7336%) hue-rotate(222deg) brightness(100%) contrast(104%);
 }

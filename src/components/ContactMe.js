@@ -8,6 +8,9 @@ import '../styles/ContactMe.css'
 
 const ContactMe = () => {
     const iconColor = "#ccd6f6"
+    const linkedinHref = navigator.language === 'pt-BR' ?
+        'https://www.linkedin.com/in/isabelly-pignatari/' :
+        'https://www.linkedin.com/in/isabelly-pignatari/?locale=en_US'
 
     return <div className="contact-list">
         <MenuList>
@@ -33,7 +36,7 @@ const ContactMe = () => {
                 </a>
             </MenuItem>
             <MenuItem>
-                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/isabelly-pignatari/">
+                <a target="_blank" rel="noopener noreferrer" href={linkedinHref}>
                     <ListItemIcon>
                         <LinkedInIcon htmlColor={iconColor} />
                     </ListItemIcon>

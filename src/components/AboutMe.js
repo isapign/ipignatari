@@ -30,7 +30,7 @@ const AboutMe = (props) => {
                 <TranslateText id="aboutMe.description.text" />
               </p>
               <p>
-                <TranslateText id="aboutMe.curiosities.text" />
+                <TranslateText id="aboutMe.formation.text" />
               </p>
               <p>
                 <TranslateText id="aboutMe.recentTechnologies.text" />
@@ -44,6 +44,12 @@ const AboutMe = (props) => {
                   )
                 })}
               </ul>
+              <p>
+                <TranslateText id="aboutMe.background.text" />
+              </p>
+              <p>
+                <TranslateText id="aboutMe.curiosities.text" />
+              </p>
             </div>
             {!props.isMobile && <div className="about-image">
               <img src={"/assets/me&odin.jpeg"} />

@@ -10,6 +10,9 @@ import "../styles/Toolbar.css"
 const PageToolbar = (props) => {
     const pages = ['introduction', 'aboutMe', 'experience', 'projects']
     const iconColor = "#ccd6f6"
+    const linkedinHref = navigator.language === 'pt-BR' ?
+        'https://www.linkedin.com/in/isabelly-pignatari/' :
+        'https://www.linkedin.com/in/isabelly-pignatari/?locale=en_US'
 
     return <nav className="toolbar">
         <Grid item xs={12}>
@@ -40,7 +43,7 @@ const PageToolbar = (props) => {
                         </a>
                     </Grid>
                     <Grid item className="toolbar-contact">
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/isabelly-pignatari/">
+                        <a target="_blank" rel="noopener noreferrer" href={linkedinHref}>
                             <LinkedInIcon htmlColor={iconColor} />
                         </a>
                     </Grid>

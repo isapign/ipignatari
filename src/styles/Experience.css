@@ -12,10 +12,10 @@
 
 .experience-description {
   color: var(--secondary);
-  font-family: "Inconsolata", monospace;
+  font-family: "Darker Grotesque", sans-serif;
   line-height: 30px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 22px;
   max-width: 1090px;
 }
 
@@ -23,16 +23,5 @@
   #experience {
     padding-left: unset;
     padding-right: unset;
-  }
-
-  .jss1 {
-    height: unset !important;
-    flex-direction: column !important;
-  }
-
-  .makeStyles-root-1 {
-    height: unset !important;
-    width: unset;
-    flex-direction: column;
   }
 }

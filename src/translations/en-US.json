@@ -6,8 +6,10 @@
     "introduction.itsIsa.subtitle": "hi, I'm Isa :)",
     "introduction.softwareDeveloper.text": "Software developer passionate about programming.",
     "introduction.description.text": "I love learning about game development, animation, tech security and using technology for ecological purposes.",
-    "aboutMe.description.text": "I am 21 years old and I have been working for 4 years as a <b>Full Stack Developer</b> on the 3SCheckout Backoffice project. It is a system that manages franchises and stores with integration for POS, Totem and Delivery. I am one of the 5 members of this E-Deploy project. Besides, I am studying Computer Science at USJT. I'm currently focusing on game development.",
-    "aboutMe.curiosities.text": "Curiosities: I love animals, analog photography, pixel art, games, street racing and confectionery.",
+    "aboutMe.description.text": "I'm 21 years old and have been working as a <b>Full Stack Developer</b> on the 3SCheckout project for 4 years. It's a franchise and store management system with integration for POS, Totem and Delivery. I started my career at 17 and have been passionate about the field ever since.",
+    "aboutMe.formation.text": "I graduated as a computer technician and am majoring in <b>Computer Science</b> at USJT. At the moment I am dedicating myself to personal projects in the area of ​​2D and 3D game development.",
+    "aboutMe.background.text": "Technology has always been present in my life as I grew up helping my father with his company. I've always been passionate about games, I spent my entire childhood playing video games with my father and sister.",
+    "aboutMe.curiosities.text": "Curiosities: I love animals, analog photography, pixel art, games, street racing and cooking.",
     "aboutMe.recentTechnologies.text": "Recently I have been working with these technologies:",
     "footer.developedBy.text": "Developed by Isabelly Pignatari."
 }

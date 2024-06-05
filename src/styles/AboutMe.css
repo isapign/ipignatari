@@ -11,7 +11,7 @@
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(3, minmax(200px, 10px));
-    font-family: "Inconsolata", monospace;
+    font-family: "Darker Grotesque", sans-serif;
     font-weight: 600;
 }
 
@@ -36,12 +36,12 @@
 }
 
 .about-description {
-    font-family: "Inconsolata", monospace;
+    font-family: "Darker Grotesque", sans-serif;
     line-height: 30px;
     font-weight: 500;
     color: var(--secondary);
     max-width: 600px;
-    font-size: 20px;
+    font-size: 22px;
     margin: 0;
 }
 
@@ -54,6 +54,7 @@
 
 .about-image {
     padding-left: 40px;
+    padding-top: 100px
 }
 
 .about-image img {

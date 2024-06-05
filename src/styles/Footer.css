@@ -12,10 +12,10 @@
 
 .footer-description {
     color: var(--secondary);
-    font-family: "Inconsolata", monospace;
+    font-family: "Darker Grotesque", sans-serif;
     line-height: 15px;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
 }
 
