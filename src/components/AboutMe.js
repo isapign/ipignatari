@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Grid } from '@mui/material'
 import FadeSection from './FadeSection'
 import TranslateText from '../translations/TranslateText'
@@ -16,7 +16,7 @@ const AboutMe = (props) => {
   
   const images = [
     {
-      alt: 'Girl holding white dog and smiling',
+      alt: 'Isabelly holding white dog and smiling',
       imgPath: '/assets/aboutMeBoard/me&odin.jpeg'
     },
     {
@@ -24,7 +24,7 @@ const AboutMe = (props) => {
       imgPath: '/assets/aboutMeBoard/flowers.jpeg'
     },
     {
-      alt: 'Girl serious posing at a party',
+      alt: 'Isabelly with a black dress posing at a party',
       imgPath: '/assets/aboutMeBoard/me1.jpeg'
     },
     {
@@ -36,21 +36,21 @@ const AboutMe = (props) => {
       imgPath: '/assets/aboutMeBoard/yule.jpeg'
     },
     {
-      alt: 'Girl posing with a running medal',
+      alt: 'Isabelly posing with a running medal',
       imgPath: '/assets/aboutMeBoard/me3.jpeg'
     },
     {
-      alt: 'Girl with white shirt posing in front of trees and plants',
-      imgPath: '/assets/aboutMeBoard/me2.jpeg'
+      alt: 'Isabelly posing at a park with a coconut',
+      imgPath: '/assets/aboutMeBoard/me4.jpeg'
     },
     {
-      alt: 'Black hair girl hugging a white dog',
+      alt: 'Isabelly hugging a white dog',
       imgPath: '/assets/aboutMeBoard/me&odin2.jpeg'
     },
     {
       alt: 'A tricolored cat eating a dog birthday cake with a white dog',
       imgPath: '/assets/aboutMeBoard/mitski&odin.jpeg'
-    },
+    }
   ]
 
   return (

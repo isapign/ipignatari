@@ -11,10 +11,10 @@ import './styles/GlobalColors.css'
 import './styles/App.css'
 
 function App() {
-  const isMobile = window.innerWidth < 800
+  const isMobile = window.innerWidth < 1000
 
   return (
-      <Grid item xs={12} className="App">
+      <Grid item xs={12} className="App" style={{ overflowX: 'hidden' }}>
         <Grid container id="content">
             <PageToolbar isMobile={isMobile} />
             {!isMobile && <ContactMe />}

@@ -19,7 +19,7 @@
     text-align: center;
 }
 
-@media only screen and (max-width: 799px) {
+@media only screen and (max-width: 1000px) {
     .footer-description {
         font-weight: 500;
         font-size: 14px !important;

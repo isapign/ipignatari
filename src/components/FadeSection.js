@@ -1,9 +1,9 @@
-import React from "react"
+import React, { useEffect, useRef, useState } from "react"
 
 const FadeSection = (props) => {
-  const [isVisible, setVisible] = React.useState(false)
-  const domRef = React.useRef()
-  React.useEffect(() => {
+  const [isVisible, setVisible] = useState(false)
+  const domRef = useRef()
+  useEffect(() => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -12,7 +12,7 @@ const FadeSection = (props) => {
       })
     })
     observer.observe(domRef.current)
-    return () => observer.unobserve(domRef.current)
+    // return () => observer.unobserve(domRef.current)
   }, [])
   return (
     <div

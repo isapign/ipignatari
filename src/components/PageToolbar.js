@@ -26,7 +26,7 @@ const PageToolbar = (props) => {
                             <TranslateText id={`${page}.title`} />
                         </a>
                     </li>
-                </Grid>) : <>
+                    </Grid>) : <>
                     <Grid item className="toolbar-contact">
                         <a href="mailto:ipignatari.contato@gmail.com">
                             <EmailRoundedIcon htmlColor={iconColor} />
@@ -48,9 +48,6 @@ const PageToolbar = (props) => {
                         </a>
                     </Grid>
                 </>}
-                <div className="toolbar-language">
-                    {props.defaultLanguage}
-                </div>
             </Grid>
         </Grid>
     </nav>

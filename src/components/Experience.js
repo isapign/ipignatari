@@ -41,7 +41,7 @@ const Experience = (props) => {
         {...props.other}
       >
         {tab === props.index && (
-          <Box sx={{ p: 3 }} className="experience-description">
+          <Box sx={{ padding: '10px 30px' }} className="experience-description">
             <span className="experience-item-company">
               {props.node.company + " | "}
             </span>
@@ -55,9 +55,9 @@ const Experience = (props) => {
               </span>
             </div>
             <div className="experience-item-description">
-              <span>
+              <p>
                 <TranslateText id={`experience.${props.node.code}.description`} />
-              </span>
+              </p>
               <ul>
                 {props.node.stacks.map((s, index) => {
                   return (
@@ -76,7 +76,6 @@ const Experience = (props) => {
 
   const experiences = [
     {
-      "index": 0,
       "code": "fullstackSoftwareDeveloper",
       "company": "E-Deploy",
       "period": "Jan/2022 - Present",
@@ -85,7 +84,6 @@ const Experience = (props) => {
       "stacks": ["Python", "ReactJs", "AWS", "Docker", "PostgreSQL", "NoSQL", "Cypress"]
     },
     {
-      "index": 1,
       "code": "frontEndSoftwareDeveloper",
       "company": "DataOps House",
       "period": "Set/2023 - Nov/2023",
@@ -94,7 +92,6 @@ const Experience = (props) => {
       "stacks": ["ReactJs", "NodeJs", "AWS", "Docker", "MongoDb"]
     },
     {
-      "index": 2,
       "code": "developmentIntern",
       "company": "E-Deploy",
       "period": "Set/2020 - Dez/2021",
@@ -103,7 +100,6 @@ const Experience = (props) => {
       "stacks": ["Python", "ReactJs", "AWS", "Docker", "PostgreSQL"]
     },
     {
-      "index": 3,
       "code": "qualityAssuranceIntern",
       "company": "E-Deploy",
       "period": "Feb/2020 - Aug/2020",
@@ -124,31 +120,29 @@ const Experience = (props) => {
               {'< '} <TranslateText id="experience.title" /> {' />'} 
             </span>
           </div>
-          <Grid item xs={12}>
-            <div className="experience-content">
-              <div className={classes.root}>
-                <Tabs
-                  orientation={!props.isMobile ? "vertical" : null}
-                  variant={!props.isMobile ? "fullWidth" : "scrollable"}
-                  value={tab}
-                  onChange={handleChange}
-                  className={classes.tabs}
-                >
-                  {experiences.map(exp => (
-                    <Tab
-                      className={classes.tab}
-                      label={<TranslateText id={`experience.${exp.code}.title`} />}
-                      {...a11yProps(exp.index)}
-                    />
-                  ))}
-                </Tabs>
-                {experiences.map(exp => (<TabPanel
-                  node={exp}
-                  index={exp.index}
-                />))}
-              </div>
+          <div className="experience-content">
+            <div className={classes.root}>
+              <Tabs
+                orientation={!props.isMobile ? "vertical" : null}
+                variant={!props.isMobile ? "fullWidth" : "scrollable"}
+                value={tab}
+                onChange={handleChange}
+                className={classes.tabs}
+              >
+                {experiences.map((exp, index) => (
+                  <Tab
+                    className={classes.tab}
+                    label={<TranslateText id={`experience.${exp.code}.title`} />}
+                    {...a11yProps(index)}
+                  />
+                ))}
+              </Tabs>
+              {experiences.map((exp, index) => (<TabPanel
+                node={exp}
+                index={index}
+              />))}
             </div>
-          </Grid>
+          </div>
         </Grid>
       </FadeSection>
     </div>

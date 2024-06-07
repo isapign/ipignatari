@@ -37,7 +37,7 @@
   max-width: 1090px;
 }
 
-@media only screen and (max-width: 799px) {
+@media only screen and (max-width: 1000px) {
   .introduction-title {
     flex-direction: column;
     padding: 40px 24px;

@@ -32,7 +32,6 @@
 .MuiButtonBase-root {
   outline: none !important;
   color: var(--secondary) !important;
-  text-align: right !important;
 }
 
 .Mui-selected {
@@ -65,23 +64,21 @@
 }
 
 .experience-item-description {
-  padding-top: 24px;
   max-width: 650px;
   font-family: "Darker Grotesque", sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   color: var(--secondary);
-  font-weight: 600;
-  text-align: center;
+  font-weight: 500;
+  text-align: justify;
 }
 
 .experience-item-description ul {
   list-style: none;
-  margin-left: -40px;
   display: inline-flex
 }
 
 .experience-item-description li::before {
-  content: "☾    ";
+  content: "☾";
   color: var(--primary);
   position: absolute;
   left: 0;
@@ -92,7 +89,7 @@
   padding-left: 20px;
   padding-right: 10px;
   padding-bottom: 16px;
-  font-size: 18px;
+  font-size: 20px;
   color: var(--secondary);
   font-weight: 600;
 }
@@ -104,7 +101,7 @@
 }
 
 
-@media only screen and (max-width: 799px) {
+@media only screen and (max-width: 1000px) {
   #experience {
       height: unset;
       padding-left: unset;
@@ -117,9 +114,21 @@
     font-size: 18px;
   }
 
+  .jss1 {
+    height: unset !important;
+    flex-direction: column !important;
+  }
+
+  .makeStyles-root-1 {
+    height: unset !important;
+    width: unset;
+    flex-direction: column;
+  }
+
   .experience-item-description {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
+    max-width: 400px;
   }
 
   .experience-item-title {
@@ -128,6 +137,20 @@
 
   .experience-item-company {
     font-size: 18px;
+  }
+
+  .experience-item-description ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 5px));
+  }
+
+  .experience-item-description li {
+    position: relative;
+    padding-right: 10px;
+    padding-bottom: 16px;
+    font-size: 18px;
+    color: var(--secondary);
+    font-weight: 600;
   }
 
   .experience-description {

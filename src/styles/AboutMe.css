@@ -30,7 +30,7 @@
     padding-bottom: 20px;
     list-style-type: none;
     display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 10px));
+    grid-template-columns: repeat(3, minmax(150px, 10px));
     font-family: "Darker Grotesque", sans-serif;
     font-weight: 600;
 }
@@ -44,7 +44,7 @@
 }
 
 .about-description li::before {
-    content: "☾    ";
+    content: "☾";
     color: var(--primary);
     position: absolute;
     left: 0;
@@ -62,7 +62,7 @@
 .about-image {
     padding: 8px 8px 26px 8px;
     border-radius: 2px;
-    background: #ddd;
+    background: #ccc;
     max-height: 120px;
     max-width: 120px;
 }
@@ -73,7 +73,7 @@
     box-shadow: none;
 }
 
-@media only screen and (max-width: 799px) {
+@media only screen and (max-width: 1000px) {
     #about {
         height: unset;
         padding-left: unset;
@@ -103,5 +103,9 @@
         padding-top: 10px;
         padding-bottom: 10px;
         grid-template-columns: repeat(2, minmax(160px, 10px));
+    }
+
+    .about-description li {
+        font-size: 18px;
     }
 }
