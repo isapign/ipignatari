@@ -1,6 +1,6 @@
 #experience {
-  min-height: 60vh;
-  width: 100%;
+  min-height: 50vh;
+  width: 2000px;
   justify-content: center;
   padding: 5% 0;
 }
@@ -110,6 +110,7 @@
       padding-left: unset;
       padding-right: unset;
       padding-top: 30%;
+      width: 100%;
   }
 
   #experience .MuiTab-root {

@@ -1,7 +1,7 @@
 #introduction {
   display: flex;
   min-height: 60vh;
-  width: 100%;
+  width: 1800px;
   justify-content: center;
   padding: 10% 0 5% 0;
 }
@@ -32,8 +32,7 @@
 .introduction-description {
   color: var(--secondary);
   font-family: "Darker Grotesque", sans-serif;
-  line-height: 30px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 22px;
   max-width: 1090px;
 }
@@ -47,6 +46,7 @@
   }
 
   #introduction {
+    width: 100%;
     padding: 25% 0 0 0;
   }
 

@@ -1,7 +1,7 @@
 import React from "react"
 import Typist from 'react-typist'
 import 'react-typist/dist/Typist.css'
-import { Grid, makeStyles } from "@mui/material"
+import { Grid } from "@mui/material"
 
 import FadeSection from './FadeSection'
 import logo from '../logo.svg'

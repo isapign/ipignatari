@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Grid } from '@mui/material'
 import FadeSection from './FadeSection'
 import TranslateText from '../translations/TranslateText'
@@ -12,6 +12,45 @@ const AboutMe = (props) => {
     "ReactJs",
     "Java",
     "Unity"
+  ]
+  
+  const images = [
+    {
+      alt: 'Girl holding white dog and smiling',
+      imgPath: '/assets/aboutMeBoard/me&odin.jpeg'
+    },
+    {
+      alt: 'Pink flowers with blue sky',
+      imgPath: '/assets/aboutMeBoard/flowers.jpeg'
+    },
+    {
+      alt: 'Girl serious posing at a party',
+      imgPath: '/assets/aboutMeBoard/me1.jpeg'
+    },
+    {
+      alt: 'Analog camera with 35mm films',
+      imgPath: '/assets/aboutMeBoard/analog.jpeg'
+    },
+    {
+      alt: 'A green cat sitted looking at the camera',
+      imgPath: '/assets/aboutMeBoard/yule.jpeg'
+    },
+    {
+      alt: 'Girl posing with a running medal',
+      imgPath: '/assets/aboutMeBoard/me3.jpeg'
+    },
+    {
+      alt: 'Girl with white shirt posing in front of trees and plants',
+      imgPath: '/assets/aboutMeBoard/me2.jpeg'
+    },
+    {
+      alt: 'Black hair girl hugging a white dog',
+      imgPath: '/assets/aboutMeBoard/me&odin2.jpeg'
+    },
+    {
+      alt: 'A tricolored cat eating a dog birthday cake with a white dog',
+      imgPath: '/assets/aboutMeBoard/mitski&odin.jpeg'
+    },
   ]
 
   return (
@@ -51,8 +90,12 @@ const AboutMe = (props) => {
                 <TranslateText id="aboutMe.curiosities.text" />
               </p>
             </div>
-            {!props.isMobile && <div className="about-image">
-              <img src={"/assets/me&odin.jpeg"} />
+            {!props.isMobile && <div className="about-image-board">
+              {images.map((img, index) => (
+                <div className="about-image" key={index}>
+                  <img src={img.imgPath} alt={img.alt} />
+                </div>
+              ))}
             </div>}
           </div>
           </Grid>
