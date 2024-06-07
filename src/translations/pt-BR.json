@@ -11,5 +11,16 @@
     "aboutMe.background.text": "A tecnologia sempre esteve presente em minha vida já que cresci ajudando meu pai com a empresa dele. Sempre fui apaixonada por jogos, passei toda a minha infância jogando video-game com meu pai e minha irmã.",
     "aboutMe.curiosities.text": "Curiosidades: Amo animais, fotografia analógica, pixel art, jogos, corrida de rua e culinária.",
     "aboutMe.recentTechnologies.text": "Recentemente tenho trabalhado com essas tecnologias:",
-    "footer.developedBy.text": "Desenvolvido por Isabelly Pignatari."
+    "footer.developedBy.text": "Desenvolvido por Isabelly Pignatari.",
+    "experience.fullstackSoftwareDeveloper.title": "Desenvolvedora Full Stack",
+    "experience.frontEndSoftwareDeveloper.title": "Desenvolvedora Front End",
+    "experience.developmentIntern.title": "Estágio Desenvolvimento Full Stack",
+    "experience.qualityAssuranceIntern.title": "Estágio Quality Assurance",
+    "experience.fullstackSoftwareDeveloper.description": "Desenvolvedora Full Stack no projeto 3SCheckout de gerenciamento de franquias e lojas integrado com POS, Totem e Delivery. Responsável pela criação de eventos e microsserviços em Python, telas e componentes responsivos e dinâmicos com ReactJs (além da manutenção de uma framework própria do projeto), automação com Cypress e testes integrados. Além disso, participo ativamente nos testes, correções, documentações, apresentações e treinamento de novos membros do time.",
+    "experience.frontEndSoftwareDeveloper.description": "Desenvolvedora Full Stack Freelancer no projeto DataBoat de gerenciamento de dados E2E para serviços Cloud. Responsável pelo desenvolvimento de telas e componentes responsivos com ReactJs e manutenção de API's com NodeJs. Comunicação em Inglês com o time internacional.",
+    "experience.developmentIntern.description": "Estagiária em desenvolvimento Full Stack no projeto 3sCheckout de gerenciamento de franquias e lojas integrado com POS, Totem e Delivery. Criação de eventos e microsserviços em Python, telas e componentes responsivos com ReactJs. Ponto focal do front-end no time.",
+    "experience.qualityAssuranceIntern.description": "Consultoria em Garantia da Qualidade. Testes e automações em Ruby. Teste E2E, integrados, progressivos e regressivos, além do mapeamento de testes e apresentações com para o cliente.",
+    "experience.type.fullTime.title": " (Tempo integral)",
+    "experience.type.freelance.title": " (Freelance)",
+    "experience.type.intern.title": " (Estágio)"
 }

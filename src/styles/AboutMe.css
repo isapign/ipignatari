@@ -5,6 +5,27 @@
     padding: 5% 0;
 }
 
+.about-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-description {
+    font-family: "Darker Grotesque", sans-serif;
+    line-height: 30px;
+    font-weight: 500;
+    color: var(--secondary);
+    max-width: 500px;
+    font-size: 22px;
+}
+
+.about-description a,
+.about-description b {
+    font-size: 21px;
+    font-weight: bold;
+    color: var(--primary);
+}
+
 .about-description ul {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -30,27 +51,6 @@
     left: 0;
 }
 
-.about-content {
-    display: flex;
-    flex-direction: row;
-}
-
-.about-description {
-    font-family: "Darker Grotesque", sans-serif;
-    line-height: 30px;
-    font-weight: 500;
-    color: var(--secondary);
-    max-width: 600px;
-    font-size: 22px;
-    margin: 0;
-}
-
-.about-description a,
-.about-description b {
-    font-size: 21px;
-    font-weight: bold;
-    color: var(--primary);
-}
 
 .about-image {
     padding-left: 40px;
@@ -58,7 +58,7 @@
 }
 
 .about-image img {
-    max-width: 400px;
+    max-width: 410px;
     height: auto;
     border-radius: 100%;
     margin-left: 50px;

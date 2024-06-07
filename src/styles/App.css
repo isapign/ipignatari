@@ -51,6 +51,7 @@ html {
 .section-header {
   display: flex;
   padding-bottom: 42px;
+  white-space: nowrap;
 }
 
 .section-header::after {
@@ -59,7 +60,6 @@ html {
   width: 300px;
   margin-top: 39px;
   height: 1px;
-  margin-left: 20px;
 }
 
 .section-title {
@@ -109,10 +109,6 @@ html {
   }
 
   p {
-    font-size: 16px;
-  }
-  
-  p {
-    font-size: 16px;
+    font-size: 18px;
   }
 }

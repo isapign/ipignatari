@@ -10,18 +10,127 @@
   flex-direction: row;
 }
 
-.experience-description {
-  color: var(--secondary);
+.MuiTab-wrapper {
+  font-size: 16px;
+  align-items: flex-start !important;
   font-family: "Darker Grotesque", sans-serif;
-  line-height: 30px;
-  font-weight: 500;
-  font-size: 22px;
-  max-width: 1090px;
 }
+
+.MuiTabs-indicator {
+  background: var(--primary) !important;
+}
+
+#experience .MuiTab-root {
+  padding: 5px 20px;
+  text-align: right !important;
+  text-transform: lowercase;
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.MuiButtonBase-root {
+  outline: none !important;
+  color: var(--secondary) !important;
+  text-align: right !important;
+}
+
+.Mui-selected {
+  color: var(--lightest-secondary) !important;
+  font-weight: 600 !important;
+}
+
+.MuiButtonBase-root:focus {
+  color: var(--primary) !important;
+}
+
+.experience-item-company {
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--lightest-secondary);
+}
+
+.experience-item-title {
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 26px;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.experience-item-duration {
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 18px;
+  color: var(--lightest-secondary);
+}
+
+.experience-item-description {
+  padding-top: 24px;
+  max-width: 650px;
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 20px;
+  color: var(--secondary);
+  font-weight: 600;
+  text-align: center;
+}
+
+.experience-item-description ul {
+  list-style: none;
+  margin-left: -40px;
+  display: inline-flex
+}
+
+.experience-item-description li::before {
+  content: "☾    ";
+  color: var(--primary);
+  position: absolute;
+  left: 0;
+}
+
+.experience-item-description li {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-bottom: 16px;
+  font-size: 18px;
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+.experience-item-description a,
+.experience-item-description b {
+  font-size: 18px;
+  font-weight: bold;
+}
+
 
 @media only screen and (max-width: 799px) {
   #experience {
-    padding-left: unset;
-    padding-right: unset;
+      height: unset;
+      padding-left: unset;
+      padding-right: unset;
+      padding-top: 30%;
+  }
+
+  #experience .MuiTab-root {
+    font-size: 18px;
+  }
+
+  .experience-item-description {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .experience-item-title {
+    font-size: 18px;
+  }
+
+  .experience-item-company {
+    font-size: 18px;
+  }
+
+  .experience-description {
+    text-align: justify;
+    max-width: min-content;
   }
 }

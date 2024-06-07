@@ -6,6 +6,11 @@
   padding: 10% 0 5% 0;
 }
 
+.introduction-content {
+  display: flex;
+  flex-direction: row;
+}
+
 .Typist {
   color: var(--lightest-secondary);
   text-align: left;
@@ -22,11 +27,6 @@
   font-weight: 600;
   font-size: 60px;
   white-space: nowrap
-}
-
-.introduction-content {
-  display: flex;
-  flex-direction: row;
 }
 
 .introduction-description {
