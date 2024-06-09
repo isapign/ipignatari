@@ -106,8 +106,7 @@
       height: unset;
       padding-left: unset;
       padding-right: unset;
-      padding-top: 30%;
-      width: 100%;
+      padding-top: 12%;
   }
 
   #experience .MuiTab-root {
@@ -139,6 +138,11 @@
     font-size: 18px;
   }
 
+  .experience-description {
+    text-align: justify;
+    max-width: min-content;
+  }
+
   .experience-item-description ul {
     display: grid;
     grid-template-columns: repeat(2, minmax(200px, 5px));
@@ -153,8 +157,4 @@
     font-weight: 600;
   }
 
-  .experience-description {
-    text-align: justify;
-    max-width: min-content;
-  }
 }

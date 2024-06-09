@@ -2,7 +2,6 @@
     min-height: 60vh;
     width: 100%;
     justify-content: center;
-    padding: 5% 0;
 }
 
 .about-content {
@@ -78,7 +77,6 @@
         height: unset;
         padding-left: unset;
         padding-right: unset;
-        padding-top: 30%;
     }
 
     .about-description {
@@ -107,5 +105,16 @@
 
     .about-description li {
         font-size: 18px;
+    }
+
+    .about-image-board {
+        margin: 0;
+        display: none;
+    }
+    
+    .about-image {
+        padding: 0;
+        max-height: 0;
+        max-width: 0;
     }
 }

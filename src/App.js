@@ -14,7 +14,7 @@ function App() {
   const isMobile = window.innerWidth < 1000
 
   return (
-      <Grid item xs={12} className="App" style={{ overflowX: 'hidden' }}>
+      <Grid item xs={12} className="App">
         <Grid container id="content">
             <PageToolbar isMobile={isMobile} />
             {!isMobile && <ContactMe />}
