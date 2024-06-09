@@ -123,8 +123,8 @@ const Experience = (props) => {
           <div className="experience-content">
             <div className={classes.root}>
               <Tabs
-                orientation={!props.isMobile ? "vertical" : null}
-                variant={!props.isMobile ? "fullWidth" : "scrollable"}
+                orientation="vertical"
+                variant="fullWidth"
                 value={tab}
                 onChange={handleChange}
                 className={classes.tabs}
