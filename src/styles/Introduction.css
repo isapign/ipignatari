@@ -3,7 +3,7 @@
   min-height: 100%;
   width: 100%;
   justify-content: center;
-  padding: 25% 0 0 0;
+  padding: 15% 0 0 0;
 }
 
 .introduction-content {
@@ -13,39 +13,44 @@
 }
 
 .introduction-fade {
+  position: absolute;
+  top: 10%;
+
   width: 400px;
   height: 400px;
-  background-image: linear-gradient(45deg, rgb(255, 187, 0),rgba(255, 102, 0, 0.5),rgba(255, 0, 234, 0.5), rgb(255, 0, 255));
+  background-image: linear-gradient(50deg, rgb(0, 255, 255, 1),rgba(0, 195, 255, 0.8), rgb(255, 0, 200));
   opacity: 0.7;
   border-radius: 100%;
-  filter: blur(3rem)
+  filter: blur(4rem)
 }
 
 .Typist {
   color: var(--lightest-secondary);
   text-align: left;
-  font-size: 60px;
+  font-size: 80px;
 }
 
 .Typist .Cursor--blinking {
-  color: var(--primary);
+  color: var(--lightest-secondary);
   padding: 5px;
   font-weight: 600;
 }
 
 .introduction-title {
-  font-family: "Kanit", sans-serif;
-  font-weight: 600;
-  font-size: 60px;
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 900;
+  font-size: 80px;
   white-space: nowrap
 }
 
 .introduction-description {
+  width: 1000px;
   color: var(--lightest-secondary);
   font-family: "Darker Grotesque", sans-serif;
   font-weight: 900;
   font-size: 40px;
   margin-top: 100px;
+  justify-content: center;
 }
 
 .introduction-description p {
@@ -58,21 +63,14 @@
 @media only screen and (max-width: 1000px) {
   .introduction-title {
     flex-direction: column;
-    padding: 40px 24px;
     font-size: 40px;
     text-align: center;
-  }
-
-  #introduction {
-    width: 100%;
-    padding: 25% 0 0 0;
   }
 
   .Typist {
     font-size: 40px;
   }
 
-  
   .introduction-description {
     text-align: center;
   }
