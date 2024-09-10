@@ -1,52 +1,42 @@
-import React, { useState } from "react"
+import React, { useEffect } from "react"
 import Typist from 'react-typist'
-import 'react-typist/dist/Typist.css'
-import { Grid } from "@mui/material"
+import "react-typist/dist/Typist.css";
 
 import FadeSection from './FadeSection'
-import TranslateText from '../translations/TranslateText'
 import '../styles/Introduction.css'
 
 const Introduction = () => {
-  const words = ["programar", "criar jogos", "resolver bugs", "centralizar div", "cachorros :3", "fazer bolos",  "gravar vídeos" ]
-  const [textCounter, setTextCounter] = useState(0)
-
-  const handleSetTextCounter = () => {
-    setTextCounter(textCounter + 1)
-    if (textCounter >= 6) {
-      setTextCounter(0)
-    }
-  }
-
-  const DynamicTypist = () => {
-    return <div>
-      <span className="introduction-title">
-        eu gosto de 
-      </span>
-      <Typist key={textCounter} onTypingDone={handleSetTextCounter}>
-        {words[textCounter]}
-        <Typist.Delay ms={1500}/>
-        <Typist.Backspace ms={200} count={words[textCounter].length} />
-      </Typist>
-    </div>
-  }
-
   return (
-    <div id="introduction">
+    <div id="home">
       <FadeSection>
-        <Grid container justifyContent="center" display={'inline-flex'}>
-          <Grid item xs={12}>
-            <div className="introduction-content">
-              <div className="introduction-description">
-                <span>oi, sou a Isa</span>
-                <DynamicTypist/>
-              </div>
-              <div className="introduction-fade">
-                  <div class="introduction-fade-circle"></div>
-              </div>
+        <div className="introduction-content">
+          <div className="intro-image">
+            <img src={'/assets/me.jpeg'} alt={'girl with bangs'} />
+          </div>
+          <Typist avgTypingDelay={100}>
+            <span className="intro-title">
+              Hey, eu sou a Isa
+            </span>
+          </Typist>
+          <div className="intro-subtitle">
+            Fullstack software developer
+          </div>
+          <div className="intro-description">
+            Desenvolvedora de software com 4 anos de experiência.
+          </div>
+          <div className="intro-button">
+            <div className="intro-contact-btn">
+              <a href="mailto:ipignatari.contato@gmail.com">
+                Fale comigo
+              </a>
             </div>
-          </Grid>
-        </Grid>
+            <div className="intro-resume-btn">
+              <a href="/assets/Isabelly_Pignatari.pdf" download="Isabelly_Pignatari">
+                baixar currículo
+              </a>
+            </div>
+          </div>
+        </div>
       </FadeSection>
     </div>
   )

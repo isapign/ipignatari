@@ -2,12 +2,10 @@ import ptBR from './pt-BR.json'
 import enUS from './en-US.json'
 
 const TranslateText = (props) => {
-    const languages = ['pt-BR', 'en-US']
-    const defaultLanguage = languages.includes(navigator.language) ? navigator.language : 'en-US'
-    const translationsJsonFile = defaultLanguage === 'pt-BR' ? ptBR : enUS
+    const translationsJsonFile = props.language === 'pt-BR' ? ptBR : enUS
 
     let translation = translationsJsonFile[props.id]
-    if (translation.includes('<b>')) {
+    if (translation?.includes('<b>')) {
       let start = translation.indexOf("<b>")
       let end = translation.indexOf("</b>")
 

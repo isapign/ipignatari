@@ -1,8 +1,9 @@
 {
-    "introduction.title": "Home",
-    "aboutMe.title": "About me",
-    "experience.title": "Experience",
-    "projects.title": "Projects",
+    "home.title": "home",
+    "aboutMe.title": "about me",
+    "experience.title": "experience",
+    "projects.title": "projects",
+    "contact.title": "contact",
     "introduction.itsIsa.subtitle": "hi, I'm Isa :)",
     "introduction.softwareDeveloper.text": "Software developer passionate about programming.",
     "introduction.description.text": "I love learning about game development, animation, tech security and using technology for ecological purposes.",
@@ -22,5 +23,6 @@
     "experience.qualityAssuranceIntern.description": "Consultancy on Quality Assurance. Testing and automation in Ruby. E2E, integrated, progressive and regressive testing.",
     "experience.type.fullTime.title": " (Full time)",
     "experience.type.freelance.title": " (Freelance)",
-    "experience.type.intern.title": " (Internship)"
+    "experience.type.intern.title": " (Internship)",
+    "myPhotography.title": "pghotography"
 }

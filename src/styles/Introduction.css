@@ -1,63 +1,102 @@
-#introduction {
-  display: flex;
-  min-height: 100%;
-  width: 100%;
+#home {
+  height: calc(100vh);
+  width: 100vw;
   justify-content: center;
-  padding: 15% 0 0 0;
+  background: var(--intro-background);
+  display: flex;
+  align-items: center;
 }
 
 .introduction-content {
-  display: flex;
-  vertical-align: center;
-  flex-direction: row;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  margin: 200px auto;
 }
 
-.introduction-fade {
-  position: absolute;
-  top: 10%;
-
-  width: 400px;
-  height: 400px;
-  background-image: linear-gradient(50deg, rgb(0, 255, 255, 1),rgba(0, 195, 255, 0.8), rgb(255, 0, 200));
-  opacity: 0.7;
+.intro-image img {
+  width: 220px;
+  height: 220px;
   border-radius: 100%;
-  filter: blur(4rem)
 }
 
 .Typist {
-  color: var(--lightest-secondary);
-  text-align: left;
-  font-size: 80px;
+  color: var(--text-strong);
+  font-size: 45px;
+  font-weight: lighter;
 }
 
 .Typist .Cursor--blinking {
-  color: var(--lightest-secondary);
+  color: var(--primary-strong);
   padding: 5px;
-  font-weight: 600;
+  font-weight: bold;
 }
 
-.introduction-title {
-  font-family: "Darker Grotesque", sans-serif;
-  font-weight: 900;
-  font-size: 80px;
-  white-space: nowrap
+.intro-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  white-space: nowrap;
 }
 
-.introduction-description {
-  width: 1000px;
-  color: var(--lightest-secondary);
-  font-family: "Darker Grotesque", sans-serif;
-  font-weight: 900;
-  font-size: 40px;
-  margin-top: 100px;
+.intro-subtitle {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 36px;
+  white-space: nowrap;
+  color: var(--text-light);
+  font-weight: 200;
+  padding: 10px;
+}
+
+.intro-description {
+  color: var(--text-light);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 24px;
   justify-content: center;
+  padding: 20px;
+  font-weight: 200;
 }
 
-.introduction-description p {
-  color: var(--lightest-secondary);
+.intro-button {
+  display: inline-block;
+  justify-content: center;
+  margin: 5px;
+}
+
+.intro-contact-btn {
+  margin: 10px 0;
+  background-color: var(--primary-strong);
+  padding: 0px 40px;
+  border-radius: 5px;
+}
+
+.intro-contact-btn a {
   font-family: "Kanit", sans-serif;
-  font-weight: 800;
-  font-size: 50px;
+  font-size: 20px;
+  color: var(--background);
+  text-decoration: none;
+  font-weight: 400;
+  text-align: center;
+}
+
+.intro-resume-btn {
+  margin: auto;
+  border: solid 2px;
+  border-color: var(--primary-strong);
+  width: 125px;
+  height: 28px;
+  line-height: 24px;
+  border-radius: 5px;
+}
+
+.intro-resume-btn a {
+  font-family: "Kanit", sans-serif;
+  color: var(--primary-strong);
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
 }
 
 @media only screen and (max-width: 1000px) {

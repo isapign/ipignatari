@@ -1,10 +1,11 @@
 import React, { useState } from "react"
-import TranslateText from "../translations/TranslateText"
-import "../styles/Experience.css"
-import FadeSection from "./FadeSection"
 import Box from '@mui/material/Box';
 import { Grid, Tab, Tabs } from "@mui/material"
 import { makeStyles } from "@mui/styles"
+
+import TranslateText from "../translations/TranslateText"
+import "../styles/Experience.css"
+import FadeSection from "./FadeSection"
 
 function a11yProps(index) {
   return {
@@ -15,7 +16,6 @@ function a11yProps(index) {
 
 const useStyles = makeStyles({
   root: {
-    flexGrow: 1,
     display: "flex",
     height: 350
   },
@@ -114,7 +114,7 @@ const Experience = (props) => {
   return (
     <div id="experience" style={{display: props.isMobile ? 'inline-block' : 'flex'}}>
       <FadeSection>
-        <Grid container justifyContent="center" display="block"> 
+        <Grid container justifyContent="center" display="block">
           <div className="section-header">
             <span className="section-title">
               {'< '} <TranslateText id="experience.title" /> {' />'} 
@@ -141,6 +141,14 @@ const Experience = (props) => {
                 node={exp}
                 index={index}
               />))}
+            </div>
+          </div>
+          <div className="experience-stacks">
+            <div>
+              <span>Tecnologias que trabalho:</span>
+            </div>
+            <div>
+              <span>Python | Java | C# (Unity) | Javascript | Typescript | ReactJs | AngularJs | NodeJs</span>
             </div>
           </div>
         </Grid>

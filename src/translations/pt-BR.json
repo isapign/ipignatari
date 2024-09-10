@@ -1,8 +1,9 @@
 {
-    "introduction.title": "Início",
-    "aboutMe.title": "Sobre mim",
-    "experience.title": "Experiência",
-    "projects.title": "Projetos",
+    "home.title": "home",
+    "aboutMe.title": "sobre mim",
+    "experience.title": "experiência",
+    "projects.title": "projetos",
+    "contact.title": "contato",
     "introduction.itsIsa.subtitle": "oi, sou a Isa :)",
     "introduction.softwareDeveloper.text": "...",
     "introduction.description.text": "Apaixonada por programação, segurança da informação, animação e jogos.",
@@ -22,5 +23,6 @@
     "experience.qualityAssuranceIntern.description": "Estagiária em Garantia da Qualidade. Planejamento de testes e automações em Ruby. Teste E2E, integrados, progressivos e regressivos, além do mapeamento de testes e apresentações para o cliente.",
     "experience.type.fullTime.title": " (Tempo integral)",
     "experience.type.freelance.title": " (Freelance)",
-    "experience.type.intern.title": " (Estágio)"
+    "experience.type.intern.title": " (Estágio)",
+    "myPhotography.title": "fotografia"
 }

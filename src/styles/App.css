@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .fade-in-section {
@@ -8,6 +9,7 @@ html {
   visibility: hidden;
   transition: opacity 0.6s ease-out, transform 1s ease-out;
   will-change: opacity, visibility;
+  height: 100%;
 }
 
 .fade-in-section.is-visible {
@@ -32,7 +34,7 @@ html {
 }
 
 ::selection {
-  background: var(--lightest-background); /* WebKit/Blink Browsers */
+  background: var(--background); /* WebKit/Blink Browsers */
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -49,25 +51,26 @@ html {
 }
 
 .section-header {
-  display: flex;
-  padding-bottom: 42px;
-  white-space: nowrap;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .section-header::after {
   content: "";
   display: block;
-  width: 300px;
+  width: 100%;
   margin-top: 39px;
   height: 1px;
 }
 
 .section-title {
   font-family: "Kanit", sans-serif;
-  color: var(--lightest-secondary);
-  font-size: 46px;
+  font-size: 40px;
   font-weight: bold;
   text-transform: lowercase;
+  text-align: center !important;
 }
 
 @media only screen and (min-device-width: 800px) {
@@ -88,11 +91,9 @@ html {
 @media only screen and (max-width: 1000px) {
   .App {
     flex-direction: column;
-    padding: 40px 24px;
   }
 
   #content {
-    padding: 10px 10px;
     width: 100%;
   }
 

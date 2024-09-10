@@ -1,8 +1,10 @@
 #footer {
     width: 100%;
+    height: 12vh;
     justify-content: center;
     padding: 50px 0;
-    display: flex
+    display: flex;
+    background: var(--intro-background);
 }
 
 .footer-content {
@@ -11,10 +13,10 @@
 }
 
 .footer-description {
-    color: var(--secondary);
-    font-family: "Darker Grotesque", sans-serif;
+    color: var(--text-strong);
+    font-family: "Space Grotesk", sans-serif;
     line-height: 15px;
-    font-weight: 600;
+    font-weight: 100;
     font-size: 16px;
     text-align: center;
 }

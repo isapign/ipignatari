@@ -8,21 +8,22 @@
 .about-content {
     display: flex;
     flex-direction: row;
+    margin: 80px auto;
 }
 
 .about-description {
-    font-family: "Darker Grotesque", sans-serif;
-    font-weight: 500;
-    color: var(--secondary);
-    max-width: 500px;
-    font-size: 22px;
+    max-width: 650px;
+    font-family: "Kanit", sans-serif;
+    font-size: 18px;
+    color: var(--text-light);
+    font-weight: 200;
+    text-align: justify;
 }
 
 .about-description a,
 .about-description b {
     font-size: 21px;
     font-weight: bold;
-    color: var(--primary);
 }
 
 .about-description ul {
@@ -39,13 +40,11 @@
     position: relative;
     padding-left: 20px;
     font-size: 20px;
-    color: var(--secondary);
     white-space: nowrap;
 }
 
 .about-description li::before {
     content: "☾";
-    color: var(--primary);
     position: absolute;
     left: 0;
 }

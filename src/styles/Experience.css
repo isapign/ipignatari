@@ -1,6 +1,6 @@
 #experience {
-  min-height: 50vh;
-  width: 2000px;
+  min-height: 60vh;
+  width: 100%;
   justify-content: center;
   padding: 5% 0 0 0
 }
@@ -8,78 +8,83 @@
 .experience-content {
   display: flex;
   flex-direction: row;
+  margin: 100px auto;
 }
 
 .MuiTab-wrapper {
   font-size: 16px;
   align-items: flex-start !important;
-  font-family: "Darker Grotesque", sans-serif;
+  font-family: "Kanit", sans-serif;
 }
 
 .MuiTabs-indicator {
-  background: var(--primary) !important;
+  background: var(--primary-strong) !important;
 }
 
 #experience .MuiTab-root {
-  padding: 5px 20px;
-  text-align: right !important;
+  padding: 35px 20px !important;
   text-transform: lowercase;
-  font-family: "Darker Grotesque", sans-serif;
+  font-family: "Space Grotesk", sans-serif !important;
   font-size: 20px;
   font-weight: 400;
+  font-size: 20px !important;
+  align-items: flex-end;
 }
 
 .MuiButtonBase-root {
   outline: none !important;
-  color: var(--secondary) !important;
+  color: var(--text-light) !important;
 }
 
 .Mui-selected {
-  color: var(--lightest-secondary) !important;
-  font-weight: 600 !important;
+  color: var(--primary-light) !important;
+  text-decoration: underline !important;
 }
 
 .MuiButtonBase-root:focus {
-  color: var(--primary) !important;
+  color: var(--primary-strong) !important;
 }
 
 .experience-item-company {
-  font-family: "Darker Grotesque", sans-serif;
+  font-family: "Kanit", sans-serif;
   font-size: 26px;
-  font-weight: bold;
-  color: var(--lightest-secondary);
+  font-weight: 400;
+  color: var(--text-strong);
 }
 
 .experience-item-title {
-  font-family: "Darker Grotesque", sans-serif;
+  font-family: "Kanit", sans-serif;
   font-size: 26px;
-  color: var(--primary);
-  font-weight: bold;
+  color: var(--primary-light);
+  font-weight: 400;
 }
 
 .experience-item-duration {
-  font-family: "Darker Grotesque", sans-serif;
-  font-size: 18px;
-  color: var(--lightest-secondary);
+  font-family: "Space Grotesk", sans-serif;
+  padding: 10px 0;
+  font-size: 16px;
+  color: var(--text-light);
+  font-weight: 500;
 }
 
 .experience-item-description {
   max-width: 650px;
-  font-family: "Darker Grotesque", sans-serif;
-  font-size: 22px;
-  color: var(--secondary);
-  font-weight: 500;
+  font-family: "Kanit", sans-serif;
+  font-size: 18px;
+  color: var(--text-light);
+  font-weight: 200;
   text-align: justify;
 }
 
 .experience-item-description ul {
   list-style: none;
-  display: inline-flex
+  display: inline-flex;
+  padding: 0
 }
 
-.experience-item-description li::before {
-  content: "☾";
-  color: var(--primary);
+.experience-item-description li::after {
+  content: "|";
+  color: var(--text-light);
   position: absolute;
   left: 0;
 }
@@ -88,18 +93,31 @@
   position: relative;
   padding-left: 20px;
   padding-right: 10px;
-  padding-bottom: 16px;
-  font-size: 20px;
-  color: var(--secondary);
-  font-weight: 600;
-}
-
-.experience-item-description a,
-.experience-item-description b {
   font-size: 18px;
-  font-weight: bold;
+  color: var(--text-light);
+  font-weight: 300;
 }
 
+.experience-stacks {
+  display: block;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.experience-stacks div:nth-child(1) {
+  color: var(--text-strong);
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Kanit", sans-serif;
+  padding: 0 0 20px  0 
+}
+
+.experience-stacks div:nth-child(2) {
+  color: var(--text-light);
+  font-size: 18px;
+  font-weight: 300;
+}
 
 @media only screen and (max-width: 1000px) {
   #experience {
@@ -141,6 +159,7 @@
   .experience-description {
     text-align: justify;
     max-width: min-content;
+    width: 10% !important
   }
 
   .experience-item-description ul {
@@ -153,7 +172,7 @@
     padding-right: 10px;
     padding-bottom: 16px;
     font-size: 18px;
-    color: var(--secondary);
+    color: var(--primary-strong);
     font-weight: 600;
   }
 
