@@ -1,0 +1,109 @@
+#contact {
+    min-height: 60vh;
+    width: 100%;
+    justify-content: center;
+    padding: 5% 0 0 0
+}
+  
+.contact-content {
+    display: flex;
+    margin: 60px auto;
+    background-color: var(--details-background);
+    padding: 50px;
+    width: 45vw;
+    height: 35vh;
+    border-radius: 10px;
+}
+
+.contact-title {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.contact-title span:nth-child(1) {
+    color: var(--text-strong);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.contact-title span:nth-child(2) {
+    color: var(--primary-strong);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contact-infos {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-infos span {
+    margin-bottom: auto;
+    color: var(--text-light);
+    font-weight: 400 !important;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px;
+}
+
+.contact-infos span:nth-child(1) {
+    font-size: 16px;
+    font-weight: bold !important;
+}
+
+.contact-email {
+    padding: 20px;
+    width: 16vw;
+    height: 30vh;
+    margin: auto;
+    background-color: var(--background);
+    border-radius: 10px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 300;
+}
+
+.contact-email-btn {
+    display: flex;
+}
+
+.contact-email-btn div {
+    border-radius: 5px;
+    padding: 3px 8px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.contact-email-btn div:hover {
+    border-color: var(--primary-strong);
+    color: var(--primary-strong)
+}
+
+.contact-email input {
+    background: var(--background);
+    font-family: "Kanit", sans-serif;
+    color: var(--text-light);
+    font-size: 14px;
+    padding: 6px;
+    font-size: 14px;
+    font-weight: 300;
+    border: solid 1px var(--text-light);
+    border-radius: 5px;
+    margin: 15px 5px 0 5px;
+    width: 100%;
+}
+
+.contact-email-send {
+  margin: 15px 5px;
+  background-color: var(--primary-strong);
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.contact-email-send a {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 14px;
+    color: var(--background);
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+}
+

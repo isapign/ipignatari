@@ -6,9 +6,9 @@
 }
 
 .experience-content {
-  display: flex;
+  display: table;
   flex-direction: row;
-  margin: 100px auto;
+  margin: 60px auto;
 }
 
 .MuiTab-wrapper {
@@ -38,7 +38,6 @@
 
 .Mui-selected {
   color: var(--primary-light) !important;
-  text-decoration: underline !important;
 }
 
 .MuiButtonBase-root:focus {
@@ -47,14 +46,14 @@
 
 .experience-item-company {
   font-family: "Kanit", sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 400;
   color: var(--text-strong);
 }
 
 .experience-item-title {
   font-family: "Kanit", sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   color: var(--primary-light);
   font-weight: 400;
 }

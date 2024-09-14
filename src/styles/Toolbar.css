@@ -38,32 +38,13 @@
     font-size: 20px;
 }
 
-.MuiInputBase-root {
+.toolbar-language select {
     background: var(--background);
-    font-family: "Kanit", sans-serif !important;
-    color: var(--text-strong) !important;
-    font-size: 12px !important;
-    padding: 0px !important;
+    font-family: "Kanit", sans-serif;
+    color: var(--text-strong);
+    font-size: 12px;
+    padding: 5px;
     height: 30px;
-}
-
-.MuiList-root {
-    color: var(--text-strong) !important;
-    background-color: var(--background);
-}
-
-.MuiButtonBase-root {
-    font-family: "Kanit", sans-serif !important;
-    color: var(--text-strong) !important;
-    font-size: 12px !important;
-    padding: 2px 10px !important;
-}
-
-.MuiSelect-root {
-    padding: 0 !important;
-}
-
-.MuiSvgIcon-root {
-    color: var(--text-strong) !important;
-    font-size: 24px !important;
+    border-radius: 5px;
+    cursor: pointer;
 }

@@ -46,22 +46,22 @@ const Experience = (props) => {
               {props.node.company + " | "}
             </span>
             <span className="experience-item-title">
-              <TranslateText id={`experience.${props.node.code}.title`} />
+              <TranslateText id={`experience.${props.node.code}.title`} {...props} />
             </span>
             <div className="experience-item-duration">
               <span>
                 {props.node.period}
-                <TranslateText id={`experience.type.${props.node.type}.title`} />
+                <TranslateText id={`experience.type.${props.node.type}.title`} {...props} />
               </span>
             </div>
             <div className="experience-item-description">
               <p>
-                <TranslateText id={`experience.${props.node.code}.description`} />
+                <TranslateText id={`experience.${props.node.code}.description`} {...props} />
               </p>
               <ul>
                 {props.node.stacks.map((s, index) => {
                   return (
-                    <FadeSection delay={`${index + 1}00ms`}>
+                    <FadeSection delay={`${index + 1}00ms`} key={index}>
                       <li key={index}>{s}</li>
                     </FadeSection>
                   )
@@ -92,14 +92,6 @@ const Experience = (props) => {
       "stacks": ["ReactJs", "NodeJs", "AWS", "Docker", "MongoDb"]
     },
     {
-      "code": "developmentIntern",
-      "company": "E-Deploy",
-      "period": "Set/2020 - Dez/2021",
-      "place": "São Paulo, Brazil",
-      "type": "intern",
-      "stacks": ["Python", "ReactJs", "AWS", "Docker", "PostgreSQL"]
-    },
-    {
       "code": "qualityAssuranceIntern",
       "company": "E-Deploy",
       "period": "Feb/2020 - Aug/2020",
@@ -117,7 +109,7 @@ const Experience = (props) => {
         <Grid container justifyContent="center" display="block">
           <div className="section-header">
             <span className="section-title">
-              {'< '} <TranslateText id="experience.title" /> {' />'} 
+              {'< '} <TranslateText id="experience.title" {...props} /> {' />'} 
             </span>
           </div>
           <div className="experience-content">
@@ -132,7 +124,7 @@ const Experience = (props) => {
                 {experiences.map((exp, index) => (
                   <Tab
                     className={classes.tab}
-                    label={<TranslateText id={`experience.${exp.code}.title`} />}
+                    label={<TranslateText id={`experience.${exp.code}.title`} {...props} />}
                     {...a11yProps(index)}
                   />
                 ))}
@@ -140,6 +132,7 @@ const Experience = (props) => {
               {experiences.map((exp, index) => (<TabPanel
                 node={exp}
                 index={index}
+                {...props}
               />))}
             </div>
           </div>

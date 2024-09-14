@@ -54,15 +54,27 @@ html {
   display: block;
   justify-content: center;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 80px;
+}
+
+.section-header::before {
+  content: "";
+  display: inline-block;
+  width: 33vw;
+  margin-bottom: 10px;
+  height: 1px;
+  margin-right: 100px;
+  background-color: var(--details-background);
 }
 
 .section-header::after {
   content: "";
-  display: block;
-  width: 100%;
-  margin-top: 39px;
+  display: inline-block;
+  width: 33vw;
+  margin-bottom: 10px;
   height: 1px;
+  margin-left: 100px;
+  background-color: var(--details-background);
 }
 
 .section-title {

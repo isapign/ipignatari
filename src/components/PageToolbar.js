@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, MenuItem, Select } from '@mui/material'
+import { Grid } from '@mui/material'
 import TranslateText from '../translations/TranslateText'
 import "../styles/Toolbar.css"
 
@@ -22,13 +22,13 @@ const PageToolbar = (props) => {
                     </li>
                 </Grid>)}
                 <Grid item className="toolbar-language">
-                    <Select
+                    <select
                         value={props.language}
                         onChange={(e) => props.setLanguage(e.target.value)}
                     >
-                        <MenuItem value={'pt-BR'}>PT-BR</MenuItem>
-                        <MenuItem value={'en-US'}>EN-US</MenuItem>
-                    </Select>
+                        <option value={'pt-BR'}>PT-BR</option>
+                        <option value={'en-US'}>EN-US</option>
+                    </select>
                 </Grid>
             </Grid>
         </Grid>

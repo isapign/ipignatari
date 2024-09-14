@@ -21,6 +21,14 @@
     text-align: center;
 }
 
+.footer-content a {
+    color: var(--text-light) !important
+}
+
+.footer-content a:hover {
+    color: var(--primary-strong) !important
+}
+
 @media only screen and (max-width: 1000px) {
     .footer-description {
         font-weight: 500;
